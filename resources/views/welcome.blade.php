@@ -11,7 +11,7 @@
 
 <body>
 
-    @livewire('hello-world')
+    @livewire('hello-world', ['name' => 'Bantos'])
 
     @livewireScripts
 </body>
