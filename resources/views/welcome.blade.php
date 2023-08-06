@@ -11,7 +11,7 @@
 
 <body>
 
-    Hello World
+    @livewire('hello-world')
 
     @livewireScripts
 </body>
