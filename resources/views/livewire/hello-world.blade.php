@@ -9,6 +9,14 @@
         <option>Adios</option>
     </select>
     <br>
+    <form action="#" wire:submit.prevent="resetName('Bantos Ben')">
+        <button type="submit">Reset Name</button>
+    </form>
+
+    <br>
+    <br>
+    <br>
+    <br>
     {{ implode(', ', $greetings) }} {{ $name }} @if ($loud)
         !
     @endif
