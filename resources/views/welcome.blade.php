@@ -11,7 +11,9 @@
 
 <body>
 
-    @livewire('hello-world', ['name' => 'Bantos'])
+    {{-- @livewire('hello-world', ['name' => 'Bantos']) --}}
+
+    @livewire('clicker')
 
     @livewireScripts
 </body>
