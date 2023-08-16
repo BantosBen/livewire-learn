@@ -8,7 +8,9 @@ use Nette\Utils\Random;
 
 class Clicker extends Component
 {
-    public $name = "";
+    public $name;
+    public $email;
+    public $password;
     public $users = null;
     public function render()
     {
@@ -24,11 +26,9 @@ class Clicker extends Component
     public function createUser()
     {
         User::create([
-            "name" => "Angatia" . time(),
-            "email" => "angatia" . rand(100, 1000) . "@gmail.com",
-            "password" => time()
+            "name" => $this->name,
+            "email" => rand() . $this->email,
+            "password" => $this->password
         ]);
-
-
     }
 }
